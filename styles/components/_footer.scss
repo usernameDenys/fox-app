@@ -1,0 +1,101 @@
+.footer {
+    width: 100%;
+    background-color: $primary;
+
+    .links {
+        padding-top: rem(40);
+        color: #fff;
+        text-align: center;
+
+        h4 {
+            font-size: rem(28);
+            font-weight: 400;
+            text-decoration-line: underline;
+        }
+
+        .links-1,
+        .links-2,
+        .links-3 {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin-top: rem(30);
+        }
+
+        a {
+            margin-top: rem(22);
+        }
+
+        .email {
+            display: flex;
+            flex-direction: column;
+            max-width: rem(355);
+            margin: 0 auto;
+            margin-top: rem(30);
+            padding-bottom: rem(32);
+
+            .email-label {
+                text-align: center;
+                font-size: rem(18);
+                line-height: rem(26);
+                font-weight: 400;
+            }
+
+            .email-input {
+                margin-top: rem(9);
+                margin-bottom: rem(11);
+                font-size: rem(16);
+                padding-top: rem(18);
+                padding-left: rem(35);
+                padding-bottom: rem(16);
+                border: solid 1px #fff;
+                border-radius: rem(3);
+            }
+
+            .email-btn {
+                margin-bottom: rem(11);
+                font-size: rem(18);
+                padding-top: rem(18);
+                padding-bottom: rem(16);
+                border: none;
+                border-radius: rem(3);
+                cursor: pointer;
+                color: $primary;
+                background-color: #fff;
+            }
+
+            .email-btn:hover {
+                background-color: rgb(216, 168, 148);
+                color: #fff;
+            }
+        }
+    }
+
+    .socialMedia {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        .socialMedia-links {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            gap: rem(30);
+            padding-bottom: rem(15);
+            margin-bottom: rem(17);
+            transform: scale(1.5);
+        }
+
+        .line {
+            width: 100%;
+            border: 1px solid #fff;
+        }
+
+        .copyright {
+            padding-top: rem(22);
+            padding-bottom: rem(22);
+            font-size: rem(13);
+            color: #fff;
+        }
+    }
+}

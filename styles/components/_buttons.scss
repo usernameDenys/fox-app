@@ -1,0 +1,33 @@
+@use 'sass:math';
+.button-container {
+    @include flex(row, space-around);
+    gap: rem(16);
+    margin-top: rem(10);
+    padding-left: 3%;
+    padding-right: 3%;
+
+    .btn {
+        width: rem(168);
+        height: rem(56);
+        margin-bottom: rem(60);
+        background-color: $primary;
+        border: $base-border-thickness;
+        border-radius: math.div($base-border-radius, 2);
+        background-repeat: no-repeat;
+        background-position: center;
+        cursor: pointer;
+    }
+}
+
+.btn1 {
+    background-image: url(../../img/icons/google_play_icon.svg);
+}
+
+.btn2 {
+    background-image: url(../../img/icons/app_store_icon.svg); 
+}
+
+.btn:hover {
+    background-color: $btn-hover;
+    transition: 500ms;
+}

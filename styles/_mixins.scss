@@ -1,0 +1,24 @@
+@mixin flex($flex-direction, $justify-content) {
+    display: flex;
+    flex-direction: $flex-direction;
+    justify-content: $justify-content;
+}
+
+@mixin center() {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+@mixin grid($rows, $columns, $gap) {
+    display: grid;
+    grid-template-rows: repeat(#{$rows}, 1fr);
+    grid-template-columns: repeat(#{$columns}, 1fr);
+    gap: #{$gap};
+}
+
+@mixin media-screen($min-width) {
+    @media screen and (min-width: $min-width) {
+        @content;
+    }
+}

@@ -1,0 +1,84 @@
+.presentation {
+    .dots {
+        display: none;
+    }
+
+    .cards-container {
+        position: relative;
+        z-index: 2;
+
+        .presentation-title {
+            margin-bottom: rem(23);
+            text-align: center;
+        }
+
+        .card {
+            box-sizing: border-box;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            background-color: $color-light;
+            min-height: rem(490);
+            border: $base-border-thickness solid $color-light;
+            border-radius: $base-border-radius;
+            box-shadow: 5px 20px 50px 0px rgba(234, 145, 39, 0.5);
+            margin: auto 3%;
+            margin-bottom: rem(40);
+
+            p {
+                font-size: rem(16);
+                font-weight: 300;
+                line-height: rem(26);
+                margin-left: rem(44);
+                margin-right: rem(45);
+            }
+
+            .card-title {
+                font-size: rem(20);
+                font-weight: 400;
+                margin-top: rem(230);
+                margin-left: rem(44);
+                margin-bottom: rem(16);
+            }
+
+            .card-btn {
+                display: flex;
+                align-content: center;
+                gap: rem(32);
+                padding-left: rem(44);
+                padding-bottom: rem(48);
+                color: $primary;
+                line-height: rem(16);
+                cursor: pointer;
+
+                a {
+                    line-height: 24px;
+                }
+
+                .arrow {
+                    color: inherit;
+                    background-image: url(../../img/icons/arrow_forward_24px.svg);
+                    background-repeat: no-repeat;
+                }
+            }
+        }
+
+        .card-1 {
+            background-image: url(../../img/img_card_1.png);
+            background-position: top;
+            background-repeat: no-repeat;
+        }
+
+        .card-2 {
+            background-image: url(../../img/img_card_2.png);
+            background-position: top;
+            background-repeat: no-repeat;
+        }
+
+        .card-3 {
+            background-image: url(../../img/img_card_3.png);
+            background-position: top;
+            background-repeat: no-repeat;
+        }
+    }
+}

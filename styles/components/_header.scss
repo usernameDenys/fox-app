@@ -1,0 +1,121 @@
+.header {
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: rem(20) 10%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    #check,
+    #close,
+    #overlay {
+        display: none;
+    }
+
+    .navbar {
+        a {
+            font-size: rem(18);
+            font-weight: 400;
+            color: $secondary;
+            margin-left: rem(55);
+        }
+
+        .icon-x {
+            display: none;
+        }
+    }
+
+    .navbar a:hover {
+        color: $primary;
+    }
+
+    .icons {
+        position: absolute;
+        right: 3%;
+        cursor: pointer;
+        display: none;
+    }
+}
+
+@media only screen and (max-width: 800px) {
+    .header {
+        padding: rem(20) 3%;
+
+        .icons {
+            display: inline-flex;
+        }
+
+        .icons #close-icon {
+            position: absolute;
+            bottom: 0;
+        }
+
+        #check:checked~.icons #menu-icon {
+            display: none;
+        }
+
+        .navbar {
+            position: absolute;
+            top: 100%;
+            left: 0;
+            width: 100%;
+            height: 0;
+            background: linear-gradient(180deg, rgba(255, 233, 221, 1) 0%, rgba(255, 255, 255, 1) 30%);
+            transition: .3s ease;
+            overflow: hidden;
+            z-index: 100;
+
+            a {
+                display: block;
+                font-size: rem(31);
+                line-height: rem(94);
+                margin: rem(35) 0;
+                text-align: center;
+            }
+
+            .icon-x {
+                display: block;
+                text-align: center;
+                padding-top: rem(10);
+            }
+        }
+
+        .navbar a:hover {
+            color: #fff;
+            background-color: $primary;
+        }
+
+        #check:checked~.navbar {
+            height: rem(500);
+        }
+
+        #close:checked~.navbar {
+            height: 0;
+        }
+
+        #close:checked~.icons #menu-icon {
+            display: inline-flex;
+        }
+
+        #overlay {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            margin-top: rem(100);
+            background-color: rgba(0, 0, 0, 0.7);
+            display: none;
+            z-index: 99;
+        }
+
+        #check:checked~#overlay {
+            display: block;
+        }
+
+        #close:checked~#overlay {
+            display: none;
+        }
+    }
+}

@@ -1,0 +1,28 @@
+.proposal {
+    padding-top: rem(77);
+
+    .img-proposal {
+        display: block;
+        margin: 0 auto;
+    }
+
+    .container-proposal {
+        padding-left: 3%;
+        padding-right: 3%;
+
+        .title-proposal {
+            font-size: rem(25);
+            font-weight: 400;
+            text-align: center;
+            margin-top: rem(30);
+        }
+
+        .text-proposal {
+            text-align: center;
+            line-height: rem(24);
+            font-weight: 300;
+            margin-top: rem(13);
+            margin-bottom: rem(24);
+        }
+    }
+}

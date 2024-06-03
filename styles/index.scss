@@ -1,0 +1,25 @@
+//variables & functions
+@import 'functions';
+@import 'variables';
+
+//mixins
+@import 'mixins';
+
+//base & layaut
+@import 'base';
+@import 'markup';
+
+//components
+@import 'components/header';
+@import 'components/intro';
+@import 'components/buttons';
+@import 'components/presentation';
+@import 'components/info';
+@import 'components/testimonials';
+@import 'components/proposal';
+@import 'components/footer';
+
+//media queries
+@import 'media';
+
+//sass --watch styles/index.scss:styles/css/index.css
